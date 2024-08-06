@@ -1,0 +1,122 @@
+// App.scss
+.count-section {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+
+  .why-choose-us {
+    margin-bottom: 50px;
+    text-align: center;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .reasons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .reason {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 17px;
+
+        .icon {
+          color: rgb(48, 132, 249);
+          
+          
+        }
+      }
+    }
+  }
+
+  .increment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    .main-in {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      color: rgb(48, 132, 249);
+
+      .icon {
+        color: inherit;
+      }
+
+      .counting {
+        color: rgb(6, 6, 144);
+        text-align: center;
+
+        h2 {
+          font-size: 17px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 1024px) {
+    .why-choose-us h2 {
+      font-size: 28px;
+    }
+
+    .why-choose-us .reason {
+      font-size: 16px;
+    }
+
+    .increment .main-in {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+
+    .why-choose-us h2 {
+      font-size: 24px;
+    }
+
+    .why-choose-us .reason {
+      font-size: 14px;
+    }
+
+    .increment .main-in {
+      .counting h2 {
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+
+    .why-choose-us h2 {
+      font-size: 20px;
+    }
+
+    .why-choose-us .reason {
+      font-size: 12px;
+    }
+
+    .increment .main-in {
+      .counting h2 {
+        font-size: 13px;
+      }
+    }
+  }
+}
