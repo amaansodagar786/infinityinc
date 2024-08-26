@@ -1,9 +1,6 @@
-// AboutUs.jsx
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { GiAchievement, GiEyeTarget, GiDiamondHard } from 'react-icons/gi';
-import visionImage from "../../Images/amaan.jpg";
-import missionImage from "../../Images/amaan.jpg";
 import amaan from "../../Images/amaan.jpg";
 
 import './About.scss';
@@ -23,11 +20,9 @@ const About = () => {
         </section>
 
         <section className="mission-vision">
-          <h2>Mission , Vision , and Values</h2>
-
+          <h2>Mission, Vision, and Values</h2>
 
           <div className="mission-vision-content">
-
             <div className="mission-vision-item">
               <div className="text-content">
                 <h3><GiEyeTarget className="icon" /> Our Vision</h3>
@@ -35,12 +30,9 @@ const About = () => {
                   To be a global leader in software development, recognized for our commitment to quality, innovation, and customer satisfaction.
                 </p>
               </div>
-              <img src={visionImage} alt="Our Vision" />
             </div>
 
-
             <div className="mission-vision-item">
-              <img src={missionImage} alt="Our Mission" />
               <div className="text-content">
                 <h3><GiAchievement className="icon" /> Our Mission</h3>
                 <p>
@@ -48,8 +40,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-
-            
 
             <div className="mission-vision-item">
               <div className="text-content">
@@ -61,8 +51,6 @@ const About = () => {
                   <li>Collaboration: Working together to achieve more</li>
                 </ul>
               </div>
-              <img src={missionImage} alt="Our Mission" />
-
             </div>
           </div>
         </section>
