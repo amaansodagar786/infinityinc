@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { GiAchievement, GiEyeTarget, GiDiamondHard } from 'react-icons/gi';
 import amaan from "../../Images/amaan.jpg";
+import hiten from "../../Images/hiten.jpg";
 
 import './About.scss';
 
@@ -75,7 +76,7 @@ const About = () => {
               </a>
             </div>
             <div className="team-member">
-              <img src={amaan} alt="Hiten" />
+              <img src={hiten} alt="Hiten" />
               <h4>Hiten</h4>
               <p>Co-Founder</p>
               <a href="https://www.linkedin.com/in/john-smith" target="_blank" rel="noopener noreferrer">
