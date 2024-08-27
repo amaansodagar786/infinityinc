@@ -1,0 +1,126 @@
+.portfolio {
+    padding: 50px 20px;
+    background-color: #f3f1f1;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #0056D0;
+      margin-bottom: 40px;
+    }
+  
+    .project {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+  
+      .project-info {
+        padding: 20px;
+  
+        h3 {
+          font-size: 28px;
+          color: #0056D0;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 16px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+  
+        .live-link {
+          display: inline-block;
+          margin-top: 10px;
+          color: #ffffff;
+          background-color: #0056D0;
+          padding: 10px 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #003a99;
+          }
+        }
+      }
+  
+      .project-images {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        padding: 20px;
+  
+        img {
+          width: 100%;
+          max-width: 300px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  
+    // Responsive styles
+    @media (max-width: 1024px) {
+      .project {
+        .project-info {
+          h3 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .project-images img {
+          max-width: 250px;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .project {
+        padding: 15px;
+  
+        .project-info {
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 30px 10px;
+  
+      h2 {
+        font-size: 24px;
+      }
+  
+      .project {
+        .project-info {
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .project-images img {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+  

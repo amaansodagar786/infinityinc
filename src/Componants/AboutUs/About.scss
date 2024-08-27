@@ -1,7 +1,7 @@
 .about-us {
   margin-top: 70px ;
   padding: 10px 20px;
-  background-color: #f3f1f1;
+  background-color: white;
 
   .container {
     max-width: 1200px;
@@ -9,6 +9,7 @@
   }
 
   h2 {
+   color: #0056d0; /* Blue text color */;
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
@@ -30,7 +31,7 @@
     .mission-vision-content {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 15px;
 
       .mission-vision-item {
         background-color: #fff; /* White background */
@@ -45,7 +46,7 @@
         .text-content {
           h3 {
             color: #0056d0; /* Blue text color */
-            font-size: 30px;
+            font-size: 26px;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
