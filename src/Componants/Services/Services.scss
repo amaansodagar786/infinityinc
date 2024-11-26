@@ -92,6 +92,8 @@
 @media (max-width: 767px) {
   .mainservice {
     width: 100%; /* Full width for mobile */
+    margin: 0 auto;
+    margin-top: 70px;
   }
 
   .specializing-in {
@@ -103,8 +105,8 @@
       gap: 1rem;
 
       .service-card {
-        width: 90%; /* Make the cards take most of the screen width */
-        max-width: 320px; /* Prevents the cards from becoming too wide */
+        // width: 90%; /* Make the cards take most of the screen width */
+        // max-width: 320px; /* Prevents the cards from becoming too wide */
         padding: 1rem; /* Apply padding */
         height: fit-content;
         
