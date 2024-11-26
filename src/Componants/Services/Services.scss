@@ -4,6 +4,7 @@
   width: 80%; /* Default to 80% width on larger screens */
   margin: 0 auto;
   margin-top: 70px;
+  box-sizing: border-box; /* Ensures padding and borders are included in the width calculation */
 
   .specializing-in {
     text-align: center;
@@ -29,7 +30,9 @@
       justify-content: center;
       gap: 1.5rem;
       flex-wrap: wrap;
-
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      margin: 0 -1rem; /* Adjust for the gap */
+      
       .service-card {
         background: #fff;
         border-radius: 12px;
@@ -39,7 +42,8 @@
         flex: 0 1 300px;
         width: 300px;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
+        box-sizing: border-box; /* Prevents padding from adding to the width */
+        
         .icon {
           font-size: 2.5rem;
           color: #4e8cff;
@@ -57,7 +61,6 @@
           color: #666;
         }
 
-        // Hover Effect
         &:hover {
           transform: scale(1.05); /* Zoom-in effect */
           box-shadow: 0 8px 15px rgba(78, 140, 255, 0.5); /* Blue glow effect */
@@ -92,8 +95,7 @@
 @media (max-width: 767px) {
   .mainservice {
     width: 100%; /* Full width for mobile */
-    margin: 0 auto;
-    margin-top: 70px;
+    padding: 0 1rem; /* Add some padding on the left and right */
   }
 
   .specializing-in {
@@ -103,13 +105,12 @@
       flex-direction: column; /* Stack the cards vertically */
       align-items: center;
       gap: 1rem;
-
+      
       .service-card {
-        // width: 90%; /* Make the cards take most of the screen width */
-        // max-width: 320px; /* Prevents the cards from becoming too wide */
-        padding: 1rem; /* Apply padding */
+        width: 100%; /* Make the cards take full width */
+        max-width: 320px; /* Prevent cards from becoming too wide */
+        padding: 1rem;
         height: fit-content;
-        
 
         .icon {
           font-size: 2rem; /* Adjust icon size */
