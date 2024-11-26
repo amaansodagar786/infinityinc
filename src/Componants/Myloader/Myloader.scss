@@ -1,0 +1,13 @@
+// Loader.scss
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Center the loader vertically and horizontally
+    background: #f0f0f0; // Optional: Set background color for better visibility
+  
+    // .react-loader-spinner {
+    //   // Optional: Adjust the styling of the loader spinner if needed
+    // }
+  }
+  

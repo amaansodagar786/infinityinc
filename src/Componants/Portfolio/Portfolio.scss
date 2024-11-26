@@ -1,126 +1,91 @@
-.portfolio {
-    padding: 50px 20px;
-    background-color: #f3f1f1;
+.hero-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  background: linear-gradient(135deg, #0099f7, #f11712);
+  color: white;
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border: none;
   
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
-    h2 {
-      text-align: center;
-      font-size: 36px;
-      color: #0056D0;
-      margin-bottom: 40px;
-    }
-  
-    .project {
-      display: flex;
-      flex-direction: column;
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-  
-      .project-info {
-        padding: 20px;
-  
-        h3 {
-          font-size: 28px;
-          color: #0056D0;
-          margin-bottom: 15px;
-        }
-  
-        p {
-          font-size: 16px;
-          color: #333;
-          margin-bottom: 10px;
-        }
-  
-        .live-link {
-          display: inline-block;
-          margin-top: 10px;
-          color: #ffffff;
-          background-color: #0056D0;
-          padding: 10px 15px;
-          border-radius: 5px;
-          text-decoration: none;
-          transition: background-color 0.3s;
-  
-          &:hover {
-            background-color: #003a99;
-          }
-        }
+
+  .content {
+      max-width: 500px;
+
+      h1 {
+          font-size: 2.5em;
+          margin-bottom: 20px;
       }
-  
-      .project-images {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-        padding: 20px;
-  
-        img {
-          width: 100%;
-          max-width: 300px;
-          border-radius: 10px;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
+
+      p {
+          font-size: 1.2em;
+          margin-bottom: 30px;
       }
-    }
-  
-    // Responsive styles
-    @media (max-width: 1024px) {
-      .project {
-        .project-info {
-          h3 {
-            font-size: 24px;
+
+      .buttons {
+          button {
+              margin-right: 15px;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+
+              &.service-btn {
+                  background-color: #fff;
+                  color: #0099f7;
+              }
+
+              &.contact-btn {
+                  background-color: #0099f7;
+                  color: #fff;
+              }
+
+              &:hover {
+                  opacity: 0.8;
+              }
           }
-          p {
-            font-size: 14px;
-          }
-        }
-        .project-images img {
-          max-width: 250px;
-        }
       }
-    }
-  
-    @media (max-width: 768px) {
-      .project {
-        padding: 15px;
-  
-        .project-info {
-          h3 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  
-    @media (max-width: 480px) {
-      padding: 30px 10px;
-  
-      h2 {
-        font-size: 24px;
-      }
-  
-      .project {
-        .project-info {
-          h3 {
-            font-size: 18px;
-          }
-          p {
-            font-size: 12px;
-          }
-        }
-        .project-images img {
-          max-width: 200px;
-        }
-      }
-    }
   }
-  
+
+  .illustration {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+
+      img {
+       
+          max-width: 100%;
+          height: auto;
+          display: block;
+      }
+  }
+
+  .custom-shape-divider-bottom-1724778533 {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1724778533 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 155px;
+}
+
+.custom-shape-divider-bottom-1724778533 .shape-fill {
+    fill: #ffffff;
+   
+
+}
+}

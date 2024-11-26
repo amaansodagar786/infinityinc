@@ -14,10 +14,12 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
+    "react-loader-spinner": "^6.1.6",
     "react-lottie": "^1.2.4",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "sass": "^1.77.8",
+    "typeface-ubuntu": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

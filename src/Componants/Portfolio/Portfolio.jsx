@@ -1,38 +1,29 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import './Portfolio.scss';
-import website from "../../Images/Services/webservice.jpg"; // Update with correct paths
-
+import img from "../../Images/Services/webservice.jpg";
 
 const Portfolio = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duration of the animation in milliseconds
-      easing: 'ease-in-out', // Easing function for the animation
-      once: true, // Whether animation should happen only once - while scrolling down
-      mirror: false, // Whether elements should animate out while scrolling past them
-    });
-  }, []);
-
   return (
-    <div className="portfolio">
-      <div className="container">
-        <h2 data-aos="fade-up">Our Portfolio</h2>
-        <section className="project" data-aos="fade-up">
-          <div className="project-info" data-aos="fade-right">
-            <h3>Website Development Project</h3>
-            <p>
-              This project involved the development of a responsive website for a client in the e-commerce sector. The website features an intuitive user interface, secure payment gateway integration, and is optimized for performance.
-            </p>
-            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Node.js</p>
-            <a href="https://example.com/live-link" target="_blank" rel="noopener noreferrer" className="live-link">View Live Project</a>
-          </div>
-          <div className="project-images" data-aos="fade-left">
-            <img src={website} alt="Website Project Screenshot 1" />
-            <img src={website} alt="Website Project Screenshot 2" />
-          </div>
-        </section>
+    <div className="hero-section">
+      <div className="content">
+        <h1>IT Solutions & Business Services Company</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua, magna aliqua.
+          Ipsum is simply dummy text of the printing.
+        </p>
+        <div className="buttons">
+          <button className="service-btn">Our Service</button>
+          <button className="contact-btn">Contact Us</button>
+        </div>
+      </div>
+      <div className="illustration">
+        <img src={img} alt="Web Service Illustration" />
+      </div>
+
+      <div className="custom-shape-divider-bottom-1724778533">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
       </div>
     </div>
   );
