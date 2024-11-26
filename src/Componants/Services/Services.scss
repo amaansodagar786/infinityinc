@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400&display=swap');
 
 .mainservice {
-  width: 80%;
+  width: 80%; /* Default to 80% width on larger screens */
   margin: 0 auto;
   margin-top: 70px;
 
@@ -70,17 +70,19 @@
 
 // Media Queries
 
-
-
 // For Tablets (768px to 1024px)
 @media (min-width: 768px) and (max-width: 1023px) {
+  .mainservice {
+    width: 90%; /* Expand the container to 90% on tablets */
+  }
+
   .specializing-in {
     .services {
-      flex-direction: row; /* Still horizontal on tablets */
+      flex-direction: row; /* Display cards in a row */
       justify-content: space-evenly;
 
       .service-card {
-        width: 100px;
+        width: 45%; /* Adjust width to fit 2 cards per row */
       }
     }
   }
@@ -88,6 +90,10 @@
 
 // For Mobile Devices (below 768px)
 @media (max-width: 767px) {
+  .mainservice {
+    width: 100%; /* Full width for mobile */
+  }
+
   .specializing-in {
     padding: 1.5rem;
 
@@ -97,12 +103,14 @@
       gap: 1rem;
 
       .service-card {
-        // height: fit-content;
         width: 90%; /* Make the cards take most of the screen width */
-        padding: 1rem;
+        max-width: 320px; /* Prevents the cards from becoming too wide */
+        padding: 1rem; /* Apply padding */
+        height: fit-content;
+        
 
         .icon {
-          font-size: 2rem; /* Reduce icon size */
+          font-size: 2rem; /* Adjust icon size */
         }
 
         h3 {
