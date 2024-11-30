@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400&display=swap');
 
 .mainservice {
-  width: 80%; /* Default to 80% width on larger screens */
+  width: 80%;
+  /* Default to 80% width on larger screens */
   margin: 0 auto;
   margin-top: 70px;
-  box-sizing: border-box; /* Ensures padding and borders are included in the width calculation */
+  box-sizing: border-box;
+  /* Ensures padding and borders are included in the width calculation */
 
   .specializing-in {
     text-align: center;
@@ -30,9 +32,11 @@
       justify-content: center;
       gap: 1.5rem;
       flex-wrap: wrap;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-      margin: 0 -1rem; /* Adjust for the gap */
-      
+      overflow-x: hidden;
+      /* Prevent horizontal scrolling */
+      margin: 0 -1rem;
+      /* Adjust for the gap */
+
       .service-card {
         background: #fff;
         border-radius: 12px;
@@ -42,8 +46,13 @@
         flex: 0 1 300px;
         width: 300px;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        box-sizing: border-box; /* Prevents padding from adding to the width */
-        
+        box-sizing: border-box;
+        /* Prevents padding from adding to the width */
+        text-decoration: none;
+        /* Remove underline */
+        color: inherit;
+        /* Inherit text color from parent styles */
+
         .icon {
           font-size: 2.5rem;
           color: #4e8cff;
@@ -62,8 +71,10 @@
         }
 
         &:hover {
-          transform: scale(1.05); /* Zoom-in effect */
-          box-shadow: 0 8px 15px rgba(78, 140, 255, 0.5); /* Blue glow effect */
+          transform: scale(1.05);
+          /* Zoom-in effect */
+          box-shadow: 0 8px 15px rgba(78, 140, 255, 0.5);
+          /* Blue glow effect */
           transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
       }
@@ -76,16 +87,19 @@
 // For Tablets (768px to 1024px)
 @media (min-width: 768px) and (max-width: 1023px) {
   .mainservice {
-    width: 90%; /* Expand the container to 90% on tablets */
+    width: 90%;
+    /* Expand the container to 90% on tablets */
   }
 
   .specializing-in {
     .services {
-      flex-direction: row; /* Display cards in a row */
+      flex-direction: row;
+      /* Display cards in a row */
       justify-content: space-evenly;
 
       .service-card {
-        width: 45%; /* Adjust width to fit 2 cards per row */
+        width: 45%;
+        /* Adjust width to fit 2 cards per row */
       }
     }
   }
@@ -94,34 +108,42 @@
 // For Mobile Devices (below 768px)
 @media (max-width: 767px) {
   .mainservice {
-    width: 100%; /* Full width for mobile */
-    padding: 0 1rem; /* Add some padding on the left and right */
+    width: 100%;
+    /* Full width for mobile */
+    padding: 0 1rem;
+    /* Add some padding on the left and right */
   }
 
   .specializing-in {
     padding: 1.5rem;
 
     .services {
-      flex-direction: column; /* Stack the cards vertically */
+      flex-direction: column;
+      /* Stack the cards vertically */
       align-items: center;
       gap: 1rem;
-      
+
       .service-card {
-        width: 100%; /* Make the cards take full width */
-        max-width: 320px; /* Prevent cards from becoming too wide */
+        width: 100%;
+        /* Make the cards take full width */
+        max-width: 320px;
+        /* Prevent cards from becoming too wide */
         padding: 1rem;
         height: fit-content;
 
         .icon {
-          font-size: 2rem; /* Adjust icon size */
+          font-size: 2rem;
+          /* Adjust icon size */
         }
 
         h3 {
-          font-size: 1rem; /* Adjust heading font size */
+          font-size: 1rem;
+          /* Adjust heading font size */
         }
 
         p {
-          font-size: 0.85rem; /* Adjust paragraph font size */
+          font-size: 0.85rem;
+          /* Adjust paragraph font size */
         }
       }
     }

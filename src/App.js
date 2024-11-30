@@ -9,6 +9,7 @@ import Gototop from './Componants/Gototop/Gototop';
 import Services from './Componants/Services/Services';
 import MyLoader from './Componants/Myloader/Myloader';
 import Portfolio from './Componants/Portfolio/Portfolio';
+import Webdevelop from './Componants/Services/Subservices/Webdevelop';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,8 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/loader" element={<MyLoader />} />
+            <Route path="/web-development" element={<Webdevelop />} />
+            
           </Routes>
           <Footer />
         </>
