@@ -1,217 +1,191 @@
 .about-us {
-  margin-top: 70px ;
-  padding: 10px 20px;
-  background-color: white;
+  padding: 3rem 1rem;
+  background: #f9f9f9;
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  h2 {
-   color: #0056d0; /* Blue text color */;
-    font-size: 36px;
-    margin-bottom: 20px;
+  // Centered Heading
+  .about-heading {
     text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #333;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: #6c63ff;
+        margin: 0.5rem auto 0;
+        border-radius: 2px;
+      }
+    }
   }
 
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
+  // About Content
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 
-  .our-story {
-    margin-bottom: 50px;
-  }
+    .text-content {
+      flex: 1;
 
-  .mission-vision {
-    margin-bottom: 50px;
+      h5 {
+        font-size: 0.9rem;
+        color: #6c63ff;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
 
-    .mission-vision-content {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
 
-      .mission-vision-item {
-        background-color: #fff; /* White background */
-        
+      p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .get-in-touch {
+        background-color: #6c63ff;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #554fcf;
+        }
+      }
+    }
+
+    .image-content {
+      flex: 1;
+      img {
+        width: 100%;
         border-radius: 10px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
 
-        .text-content {
-          h3 {
-            color: #0056d0; /* Blue text color */
-            font-size: 26px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
+  // Vision Section
+  .vision-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
 
-            .icon {
-              margin-right: 10px;
-              color: #0056d0; /* Blue icon color */
-            }
-          }
+    .vision-image {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
 
-          p, ul {
-            font-size: 16px;
-            line-height: 1.6;
-          }
+    .vision-content {
+      flex: 1;
 
-          ul {
-            list-style-type: none;
-            padding: 0;
+      h5 {
+        font-size: 0.9rem;
+        color: #6c63ff;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
 
-            li {
-              margin-bottom: 10px;
-            }
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 1rem;
+          color: #333;
+          font-size: 1rem;
+          position: relative;
+
+          &::before {
+            content: '•';
+            color: #6c63ff;
+            font-size: 1.5rem;
+            position: absolute;
+            left: -1.5rem;
+            top: -2px;
           }
         }
       }
     }
   }
 
-  .team {
-    h2 {
-      text-align: center;
-    }
-
-    .team-members {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 30px;
-
-      .team-member {
-        text-align: center;
-        max-width: 200px;
-
-        img {
-          border-radius: 50%;
-          width: 150px;
-          height: 150px;
-          object-fit: cover;
-          margin-bottom: 15px;
-        }
-
-        h4 {
-          font-size: 22px;
-          margin-bottom: 10px;
-        }
-
-        p {
-          font-size: 16px;
-          margin-bottom: 10px;
-        }
-
-        a {
-          color: #0077b5;
-          font-size: 24px;
-          transition: color 0.3s;
-
-          &:hover {
-            color: #005582;
-          }
-        }
-      }
-    }
-  }
-
-  // Responsive styling for tablet and mobile views
+  // Responsive Styles
   @media (max-width: 1024px) {
-    padding: 40px 15px;
+    .about-content,
+    .vision-section {
+      flex-direction: column;
 
-    h2 {
-      font-size: 30px;
-    }
-
-    p, ul li {
-      font-size: 16px;
-    }
-
-    .mission-vision-content {
-      .mission-vision-item {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .text-content {
-          h3 {
-            font-size: 24px;
-          }
-
-          p, ul {
-            font-size: 16px;
-          }
-        }
+      .image-content,
+      .vision-image {
+        margin-bottom: 2rem;
       }
     }
   }
 
   @media (max-width: 768px) {
-    padding: 30px 10px;
-
-    h2 {
-      font-size: 30px;
-    }
-
-    p, ul li {
-      font-size: 14px;
-    }
-
-    .team-members {
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .team-member {
-      max-width: 180px;
-
-      img {
-        width: 130px;
-        height: 130px;
+    .about-heading {
+      h2 {
+        font-size: 2rem;
       }
+    }
 
-      h4 {
-        font-size: 20px;
+    .text-content,
+    .vision-content {
+      text-align: center;
+
+      h1 {
+        font-size: 1.75rem;
       }
 
       p {
-        font-size: 14px;
+        font-size: 0.9rem;
       }
     }
-  }
 
-  @media (max-width: 480px) {
-    padding: 20px 10px;
-
-    h2 {
-      font-size: 22px;
-    }
-
-    p, ul li {
-      font-size: 13px;
-    }
-
-    .team-member {
-      max-width: 150px;
-
-      img {
-        width: 100px;
-        height: 100px;
-      }
-
-      h4 {
-        font-size: 18px;
-      }
-
-      p {
-        font-size: 13px;
-      }
+    .image-content img,
+    .vision-image img {
+      border-radius: 5px;
     }
   }
 }

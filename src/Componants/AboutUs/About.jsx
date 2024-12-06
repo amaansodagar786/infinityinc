@@ -1,92 +1,74 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
-import { GiAchievement, GiEyeTarget, GiDiamondHard } from 'react-icons/gi';
-import amaan from "../../Images/amaan.jpg";
-import hiten from "../../Images/hiten.jpg";
-
 import './About.scss';
+import buildingImage from '../../Images/Services/webservice.jpg';
+import visionImage from '../../Images/Services/webservice.jpg';
 
 const About = () => {
   return (
-    <div className="about-us">
+    <section className="about-us">
       <div className="container">
-        <section className="our-story">
+        {/* Top Heading */}
+        <div className="about-heading">
           <h2>About Us</h2>
-          <p>
-            Founded in 2024, <strong>Infinity Inc.</strong> began with a mission to revolutionize the software development industry. Our founders envisioned a company where creativity meets cutting-edge technology.
-          </p>
-          <p>
-            With a passion for innovation and a commitment to excellence, Infinity Inc. has grown into a dynamic team of experts dedicated to delivering exceptional software solutions.
-          </p>
-        </section>
+        </div>
 
-        <section className="mission-vision">
-          <h2>Mission, Vision, and Values</h2>
-
-          <div className="mission-vision-content">
-            <div className="mission-vision-item">
-              <div className="text-content">
-                <h3><GiEyeTarget className="icon" /> Our Vision</h3>
-                <p>
-                  To be a global leader in software development, recognized for our commitment to quality, innovation, and customer satisfaction.
-                </p>
-              </div>
-            </div>
-
-            <div className="mission-vision-item">
-              <div className="text-content">
-                <h3><GiAchievement className="icon" /> Our Mission</h3>
-                <p>
-                  To empower businesses with innovative software solutions that drive success and growth.
-                </p>
-              </div>
-            </div>
-
-            <div className="mission-vision-item">
-              <div className="text-content">
-                <h3><GiDiamondHard className="icon" /> Our Core Values</h3>
-                <ul>
-                  <li>Innovation: Pushing the boundaries of technology</li>
-                  <li>Excellence: Striving for the highest standards</li>
-                  <li>Integrity: Operating with honesty and transparency</li>
-                  <li>Collaboration: Working together to achieve more</li>
-                </ul>
-              </div>
-            </div>
+        {/* Main Content */}
+        <div className="about-content">
+          <div className="text-content">
+            <h5>WEB DEVELOPMENT COMPANY</h5>
+            <h1>Who we Are</h1>
+            <p>
+              The foundation of iNFINITY Inc. has been laid on by a team of like-minded intellectuals sharing a passion for technology, innovation, and engineering. Since its inception, iNFINITY Inc. has been working consistently to bring a digital revolution across various industries and businesses around the globe.
+            </p>
+            <p>
+              With a wealth of development experience, deep understanding of global markets, an eye for design, and unmatched technical expertise, we help transform your ideas and requirements into functional and customized digital solutions.
+            </p>
+            <button className="get-in-touch">Get in Touch</button>
           </div>
-        </section>
-
-        <section className="team">
-          <h2>Meet Our Team</h2>
-          <div className="team-members">
-            <div className="team-member">
-              <img src={amaan} alt="Jay" />
-              <h4>Jay</h4>
-              <p>Co-Founder</p>
-              <a href="https://www.linkedin.com/in/jane-doe" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-            </div>
-            <div className="team-member">
-              <img src={amaan} alt="Amaan" />
-              <h4>Amaan</h4>
-              <p>Co-Founder</p>
-              <a href="https://www.linkedin.com/in/john-smith" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-            </div>
-            <div className="team-member">
-              <img src={hiten} alt="Hiten" />
-              <h4>Hiten</h4>
-              <p>Co-Founder</p>
-              <a href="https://www.linkedin.com/in/john-smith" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-            </div>
+          <div className="image-content">
+            <img src={buildingImage} alt="Company Building" />
           </div>
-        </section>
+        </div>
+
+        {/* Vision Section */}
+        <div className="vision-section">
+          <div className="vision-image">
+            <img src={visionImage} alt="Vision Illustration" />
+          </div>
+          <div className="vision-content">
+            <h5>OUR VISION</h5>
+            <h1>To bring in a Digital Revolution</h1>
+            <p>
+              We envision giving a 360-degree transformation to your Digital Personal Me. We continually work towards enabling businesses from various sectors to harness the power of technology and transform how they operate and how their brand can establish a unique identity digitally.
+            </p>
+            <p>
+              Our team tirelessly works to help you achieve your strategic goals through technology & innovative solutions by thinking beyond the brief and pre-empting the future. Most importantly, WE DELIVER – each time.
+            </p>
+          </div>
+        </div>
+
+        {/* Core Values Section */}
+        <div className="vision-section">
+          
+          <div className="vision-content">
+            <h5>OUR VALUES</h5>
+            <h1>Integrity, Transparency & Commitment</h1>
+            <p>
+              Our core values stand tall as pillars of our existence and growth. We strongly believe that for the successful execution of any project and continual growth, it is crucial to:
+            </p>
+            <ul>
+              <li>Maintain 100% transparency in communication within your team and with your client.</li>
+              <li>Ensure full clarity and understanding of the client’s expectations.</li>
+              <li>Adopt an ethical approach in all endeavors.</li>
+              <li>Deliver best-in-class innovative solutions within the committed timelines.</li>
+            </ul>
+          </div>
+          <div className="vision-image">
+            <img src={visionImage} alt="Our Values Illustration" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

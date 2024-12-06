@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Webdevelop.scss";
 import webimage from "../../../Images/Services/webservice.jpg";
-import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 
 const Webdevelop = () => {
-  const technologies = [
+  const frontendTechnologies = [
     {
       icon: <FaHtml5 color="#E34F26" size={50} />,
       name: "HTML",
@@ -29,6 +30,24 @@ const Webdevelop = () => {
       icon: <FaReact color="#61DAFB" size={50} />,
       name: "React",
       description: "A JavaScript library for building user interfaces.",
+    },
+  ];
+
+  const backendTechnologies = [
+    {
+      icon: <FaNodeJs color="#339933" size={50} />,
+      name: "Node.js",
+      description: "A JavaScript runtime built on Chrome's V8 engine for server-side programming.",
+    },
+    {
+      icon: <FaJs color="#F7DF1E" size={50} />,
+      name: "JavaScript",
+      description: "A versatile language used for both frontend and backend development.",
+    },
+    {
+      icon: <SiExpress color="#000" size={50} />,
+      name: "Express.js",
+      description: "A minimal and flexible Node.js web application framework.",
     },
   ];
 
@@ -59,7 +78,22 @@ const Webdevelop = () => {
         <h2>Frontend Technologies</h2>
         <p>Explore the core technologies we use to create exceptional user experiences.</p>
         <div className="technology-cards">
-          {technologies.map((tech, index) => (
+          {frontendTechnologies.map((tech, index) => (
+            <div className="card" key={index}>
+              <div className="icon">{tech.icon}</div>
+              <h3>{tech.name}</h3>
+              <p>{tech.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Backend Technologies Section */}
+      <section className="backend-technologies">
+        <h2>Backend Technologies</h2>
+        <p>Discover the powerful technologies we use to build robust server-side applications.</p>
+        <div className="technology-cards">
+          {backendTechnologies.map((tech, index) => (
             <div className="card" key={index}>
               <div className="icon">{tech.icon}</div>
               <h3>{tech.name}</h3>
