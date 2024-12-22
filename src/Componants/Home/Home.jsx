@@ -11,7 +11,7 @@ const Home = () => {
 
 home
 <Banner/>
-<Introduction/>
+{/* <Introduction/> */}
 <Count/>
 
     </div>
