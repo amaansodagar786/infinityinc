@@ -1,18 +1,15 @@
-// Loader.jsx
-import React from 'react';
-import { Puff } from 'react-loader-spinner'; // Import the specific loader type
+import React from "react";
 import './Myloader.scss';
 
 const MyLoader = () => {
-    return (
-        <div className="loader-container">
-          <Puff
-            color="#00BFFF"
-            height={100}
-            width={100}
-          />
-        </div>
-      );
+  return (
+    <div className="loader-container">
+      <div className="infinity-loader">
+        <div className="loop"></div>
+        <div className="loop"></div>
+      </div>
+    </div>
+  );
 };
 
 export default MyLoader;

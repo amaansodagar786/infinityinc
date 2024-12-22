@@ -2,6 +2,8 @@ import React from 'react';
 import './About.scss';
 import buildingImage from '../../Images/Services/webservice.jpg';
 import visionImage from '../../Images/Services/webservice.jpg';
+import Count from '../CountShow/Count'
+
 
 const About = () => {
   return (
@@ -67,6 +69,9 @@ const About = () => {
             <img src={visionImage} alt="Our Values Illustration" />
           </div>
         </div>
+      </div>
+      <div>
+        <Count/>
       </div>
     </section>
   );

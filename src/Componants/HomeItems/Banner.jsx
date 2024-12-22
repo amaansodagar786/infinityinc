@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../../Images/bganimation.json';
+import animationData from '../../Images/webanimation.json';
 import './Banner.scss';
 
 const Banner = () => {

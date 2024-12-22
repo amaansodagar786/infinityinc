@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
-  max-width: 1200px;
+  // max-width: 1200px;
 
   .why-choose-us {
     color: #244593;
@@ -21,6 +21,7 @@
     }
 
     .reasons {
+      margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
